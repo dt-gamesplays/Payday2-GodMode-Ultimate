@@ -1,0 +1,19 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Menu di configurazione principale.",
+    "godmode_master_title": "Abilita Mod",
+    "godmode_master_desc": "Interruttore principale. Se disabilitato, tutte le funzioni sottostanti vengono disattivate.",
+    "godmode_invuln_title": "Invulnerabilità",
+    "godmode_invuln_desc": "Immunità a proiettili, esplosioni, fuoco e danni da caduta.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Previene lo shock elettrico dei Taser.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Previene che i Cloaker ti atterrino (calcio istantaneo).",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Previene l'accecamento (schermo bianco) dalle flashbang.",
+    "godmode_language_title": "Lingua / Language",
+    "godmode_language_desc": "Seleziona la lingua della mod. 'Auto' usa la lingua del gioco.",
+    "godmode_language_auto": "Auto (Default)",
+    "godmode_language_en": "English",
+    "godmode_language_it": "Italiano"
+}

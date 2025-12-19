@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Hauptkonfigurationsmenü.",
+    "godmode_master_title": "Mod Aktivieren",
+    "godmode_master_desc": "Hauptschalter. Wenn deaktiviert, sind alle Funktionen deaktiviert.",
+    "godmode_invuln_title": "Unverwundbarkeit",
+    "godmode_invuln_desc": "Immunität gegen Kugeln, Explosionen, Feuer und Fallschaden.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Verhindert, dass Taser Sie schocken.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Verhindert, dass Cloaker Sie sofort zu Boden bringen.",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Verhindert Blendung durch Blendgranaten."
+}

@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Hoofdconfiguratiemenu.",
+    "godmode_master_title": "Mod Inschakelen",
+    "godmode_master_desc": "Hoofdschakelaar. Indien uitgeschakeld, worden alle onderstaande functies gedeactiveerd.",
+    "godmode_invuln_title": "Onkwetsbaarheid",
+    "godmode_invuln_desc": "Immuniteit voor kogels, explosies, vuur en valschade.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Voorkomt dat Tasers je schokken.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Voorkomt dat Cloakers je direct neerhalen.",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Voorkomt verblinding door flitsgranaten."
+}

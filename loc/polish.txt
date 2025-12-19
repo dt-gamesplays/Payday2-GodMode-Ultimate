@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Główne menu konfiguracji.",
+    "godmode_master_title": "Włącz Mod",
+    "godmode_master_desc": "Główny przełącznik. Jeśli wyłączony, wszystkie poniższe funkcje są nieaktywne.",
+    "godmode_invuln_title": "Nieśmiertelność",
+    "godmode_invuln_desc": "Odporność na kule, wybuchy, ogień i obrażenia od upadku.",
+    "godmode_taser_title": "Anty-Taser",
+    "godmode_taser_desc": "Zapobiega porażeniu prądem przez Tasery.",
+    "godmode_cloaker_title": "Anty-Cloaker",
+    "godmode_cloaker_desc": "Zapobiega powaleniu przez Cloakerów.",
+    "godmode_flash_title": "Anty-Flashbang",
+    "godmode_flash_desc": "Zapobiega oślepieniu przez granaty błyskowe."
+}

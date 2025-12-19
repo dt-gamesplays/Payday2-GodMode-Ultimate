@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Hlavní menu nastavení.",
+    "godmode_master_title": "Zapnout Mod",
+    "godmode_master_desc": "Hlavní vypínač. Pokud je vypnutý, všechny funkce níže jsou neaktivní.",
+    "godmode_invuln_title": "Nesmrtelnost",
+    "godmode_invuln_desc": "Imunita vůči kulkám, výbuchům, ohni a pádu.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Zabraňuje Taserům dát vám šok.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Zabraňuje Cloakerům vás okamžitě srazit k zemi.",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Zabraňuje oslepení flashbangem."
+}

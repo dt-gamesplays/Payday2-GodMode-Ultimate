@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Menú de configuración principal.",
+    "godmode_master_title": "Activar Mod",
+    "godmode_master_desc": "Interruptor principal. Si está desactivado, todas las funciones se desactivan.",
+    "godmode_invuln_title": "Invulnerabilidad",
+    "godmode_invuln_desc": "Inmunidad a balas, explosiones, fuego y daño por caída.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Evita que los Tasers te electrocuten.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Evita que los Cloakers te derriben instantáneamente.",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Evita el cegamiento por granadas aturdidoras."
+}

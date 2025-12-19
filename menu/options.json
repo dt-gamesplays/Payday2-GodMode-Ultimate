@@ -1,0 +1,86 @@
+{
+    "menu_id": "god_mode_menu",
+    "parent_menu_id": "blt_options",
+    "title": "godmode_title",
+    "description": "godmode_desc",
+    "items": [
+        {
+            "type": "multiple_choice",
+            "id": "godmode_language_select",
+            "title": "godmode_language_title",
+            "description": "godmode_language_desc",
+            "callback": "GodMode_Language_Callback",
+            "items": [
+                "godmode_language_auto",
+                "godmode_language_en",
+                "godmode_language_it",
+                "godmode_language_fr",
+                "godmode_language_de",
+                "godmode_language_es",
+                "godmode_language_ru",
+                "godmode_language_pt",
+                "godmode_language_nl",
+                "godmode_language_pl",
+                "godmode_language_tr",
+                "godmode_language_sv",
+                "godmode_language_cs",
+                "godmode_language_id"
+            ],
+            "value": "language_index",
+            "default_value": 1
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "godmode_toggle_master",
+            "title": "godmode_master_title",
+            "description": "godmode_master_desc",
+            "callback": "GodMode_Master_Callback",
+            "value": "master_switch",
+            "default_value": true
+        },
+        {
+            "type": "divider",
+            "size": 20
+        },
+        {
+            "type": "toggle",
+            "id": "godmode_toggle_invuln",
+            "title": "godmode_invuln_title",
+            "description": "godmode_invuln_desc",
+            "callback": "GodMode_Invuln_Callback",
+            "value": "invulnerable",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
+            "id": "godmode_toggle_taser",
+            "title": "godmode_taser_title",
+            "description": "godmode_taser_desc",
+            "callback": "GodMode_Taser_Callback",
+            "value": "no_taser",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
+            "id": "godmode_toggle_cloaker",
+            "title": "godmode_cloaker_title",
+            "description": "godmode_cloaker_desc",
+            "callback": "GodMode_Cloaker_Callback",
+            "value": "no_cloaker",
+            "default_value": true
+        },
+        {
+            "type": "toggle",
+            "id": "godmode_toggle_flash",
+            "title": "godmode_flash_title",
+            "description": "godmode_flash_desc",
+            "callback": "GodMode_Flash_Callback",
+            "value": "no_flash",
+            "default_value": true
+        }
+    ]
+}

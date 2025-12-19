@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Menu konfigurasi utama.",
+    "godmode_master_title": "Aktifkan Mod",
+    "godmode_master_desc": "Saklar utama. Jika dimatikan, semua fitur di bawah ini tidak aktif.",
+    "godmode_invuln_title": "Kebal",
+    "godmode_invuln_desc": "Kebal terhadap peluru, ledakan, api, dan kerusakan akibat jatuh.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Mencegah Taser menyetrum Anda.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Mencegah Cloaker menendang Anda jatuh seketika.",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Mencegah layar menjadi putih karena flashbang."
+}

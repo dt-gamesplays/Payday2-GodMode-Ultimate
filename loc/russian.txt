@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Главное меню настроек.",
+    "godmode_master_title": "Включить мод",
+    "godmode_master_desc": "Главный переключатель. Если выключен, все функции ниже не работают.",
+    "godmode_invuln_title": "Бессмертие",
+    "godmode_invuln_desc": "Иммунитет к пулям, взрывам, огню и падениям.",
+    "godmode_taser_title": "Анти-Тайзер",
+    "godmode_taser_desc": "Тайзеры не могут ударить вас током.",
+    "godmode_cloaker_title": "Анти-Клокер",
+    "godmode_cloaker_desc": "Клокеры не могут сбить вас с ног.",
+    "godmode_flash_title": "Анти-Флешка",
+    "godmode_flash_desc": "Защита от ослепления светошумовыми гранатами."
+}

@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Ana yapılandırma menüsü.",
+    "godmode_master_title": "Modu Etkinleştir",
+    "godmode_master_desc": "Ana güç anahtarı. Devre dışı bırakılırsa, aşağıdaki tüm özellikler kapanır.",
+    "godmode_invuln_title": "Ölümsüzlük",
+    "godmode_invuln_desc": "Mermilere, patlamalara, ateşe ve düşme hasarına karşı bağışıklık.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Taser'ların sizi şoklamasını önler.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Cloaker'ların sizi anında yere sermesini önler.",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Flash bombalarının ekranı kör etmesini önler."
+}

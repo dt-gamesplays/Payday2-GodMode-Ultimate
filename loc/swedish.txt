@@ -1,0 +1,14 @@
+{
+    "godmode_title": "God Mode",
+    "godmode_desc": "Huvudkonfigurationsmeny.",
+    "godmode_master_title": "Aktivera Mod",
+    "godmode_master_desc": "Huvudströmbrytare. Om inaktiverad är alla funktioner nedan avstängda.",
+    "godmode_invuln_title": "Odödlighet",
+    "godmode_invuln_desc": "Immunitet mot kulor, explosioner, eld och fallskada.",
+    "godmode_taser_title": "Anti-Taser",
+    "godmode_taser_desc": "Förhindrar att Tasers ger dig elchock.",
+    "godmode_cloaker_title": "Anti-Cloaker",
+    "godmode_cloaker_desc": "Förhindrar att Cloakers sparkar ner dig direkt.",
+    "godmode_flash_title": "Anti-Flashbang",
+    "godmode_flash_desc": "Förhindrar att skärmen blir vit av flashbangs."
+}
