@@ -14,7 +14,7 @@ end
 ----------------------------------------------------------------------
 local old_set_concussion = CoreEnvironmentControllerManager.set_concussion_grenade
 function CoreEnvironmentControllerManager:set_concussion_grenade(...)
-    if GodMode.settings.master_switch and GodMode.settings.no_flash then
+    if GodMode and GodMode.settings.master_switch and GodMode.settings.no_flash then
         return -- No distortion
     end
     return old_set_concussion(self, ...)

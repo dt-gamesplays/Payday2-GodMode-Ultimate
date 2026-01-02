@@ -19,7 +19,7 @@
         },
         {
             "hook_id": "lib/managers/menumanager",
-            "script_path": "hooks/Menu.lua"
+            "script_path": "hooks/MenuManager.lua"
         }
     ]
 }
