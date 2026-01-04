@@ -63,6 +63,23 @@ function GodMode:Load()
     end
 end
 
+-- GLOBAL HELPER: Fast check to see if GodMode settings are loaded and active
+-- This is used by all other files to ensure safety and cleaner code.
+function GodMode:IsSettingActive(setting_key)
+    -- If settings aren't loaded or Master Switch is OFF, return false immediately
+    if not self.settings or not self.settings.master_switch then
+        return false
+    end
+    
+    -- If no specific key is provided, we just return true (Master Switch is ON)
+    if not setting_key then
+        return true
+    end
+
+    -- Return the specific setting value
+    return self.settings[setting_key] == true
+end
+
 -- Load settings immediately on startup
 GodMode:Load()
 

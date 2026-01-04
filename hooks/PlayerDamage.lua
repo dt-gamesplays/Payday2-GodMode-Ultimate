@@ -1,55 +1,56 @@
 local hook_id = "Mod_GodMode_Immunity"
+local GodMode = _G.GodMode
+local settings = GodMode.settings 
 
-local damage_types = {
+local damage_types_general = {
     "damage_bullet",
     "damage_explosion",
     "damage_fire",
-    "damage_fall",
     "damage_simple"
 }
 
 ----------------------------------------------------------------------
--- HELPER: Fast check to see if GodMode settings are loaded
+-- 1. NO DAMAGE HANDLERS
 ----------------------------------------------------------------------
-local function IsSettingActive(setting_key)
-    local GM = _G.GodMode
-    if GM and GM.settings and GM.settings.master_switch then
-        return GM.settings[setting_key]
-    end
-    return false
-end
 
-----------------------------------------------------------------------
--- 1. NO DAMAGE + CAMERA SHAKE REMOVAL (PreHook)
-----------------------------------------------------------------------
-local function GodMode_DamageHandler(self, attack_data)
-    -- Fast check: If mod is invalid or invulnerability is off, do nothing
-    if not IsSettingActive("invulnerable") then 
+-- Handler for standard damage types (Bullets, fire, etc.)
+local function GodMode_GeneralDamage(self, attack_data)
+    if not (settings.master_switch and settings.invulnerable) then 
         return 
     end
 
-    if not attack_data then return end
-
-    -- Anti-FallDamage: If height parameter exists, reset it.
-    if attack_data.height then
-        attack_data.height = 0 
+    if attack_data then 
+        attack_data.damage = 0 
     end
-    
-    -- Nullify damage
-    attack_data.damage = 0 
 end
 
-for _, func_name in ipairs(damage_types) do
-    Hooks:PreHook(PlayerDamage, func_name, hook_id .. "_" .. func_name, GodMode_DamageHandler)
+-- Handler specifically for Fall Damage
+local function GodMode_FallDamage(self, attack_data)
+    if not (settings.master_switch and settings.invulnerable) then 
+        return 
+    end
+
+    if attack_data then
+        attack_data.height = 0 
+        attack_data.damage = 0 
+    end
 end
+
+-- Apply hooks for general damage
+for _, func_name in ipairs(damage_types_general) do
+    Hooks:PreHook(PlayerDamage, func_name, hook_id .. "_" .. func_name, GodMode_GeneralDamage)
+end
+
+-- Apply hook for fall damage separately
+Hooks:PreHook(PlayerDamage, "damage_fall", hook_id .. "_damage_fall", GodMode_FallDamage)
+
 
 ----------------------------------------------------------------------
 -- 2. CORE INVULNERABILITY (Health never drops below current value)
 ----------------------------------------------------------------------
 local old_change_health = PlayerDamage.change_health
 function PlayerDamage:change_health(change_of_health)
-    -- If health change is negative (damage) and invulnerable is ON, block it
-    if change_of_health < 0 and IsSettingActive("invulnerable") then
+    if change_of_health < 0 and settings.master_switch and settings.invulnerable then
         change_of_health = 0
     end
     
@@ -61,7 +62,7 @@ end
 ----------------------------------------------------------------------
 local old_damage_melee = PlayerDamage.damage_melee
 function PlayerDamage:damage_melee(attack_data)
-    if IsSettingActive("invulnerable") then
+    if settings.master_switch and settings.invulnerable then
         return
     end
     
@@ -73,7 +74,7 @@ end
 ----------------------------------------------------------------------
 local old_damage_tase = PlayerDamage.damage_tase
 function PlayerDamage:damage_tase(attack_data)
-    if IsSettingActive("no_taser") then
+    if settings.master_switch and settings.no_taser then
         return
     end
     
@@ -85,7 +86,7 @@ end
 ----------------------------------------------------------------------
 local old_on_flashbanged = PlayerDamage.on_flashbanged
 function PlayerDamage:on_flashbanged(sound_source_pos)
-    if IsSettingActive("no_flash") then
+    if settings.master_switch and settings.no_flash then
         return
     end
     
@@ -94,7 +95,7 @@ end
 
 local old_on_concussion = PlayerDamage.on_concussion
 function PlayerDamage:on_concussion(mul, duration, twich_duration, duration_multiplier)
-    if IsSettingActive("no_flash") then
+    if settings.master_switch and settings.no_flash then
         return
     end
     
