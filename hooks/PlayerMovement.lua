@@ -22,3 +22,22 @@ function PlayerMovement:on_SPOOCed(enemy_unit)
     end
     return old_on_SPOOCed(self, enemy_unit)
 end
+
+----------------------------------------------------------------------
+-- 3. INFINITE STAMINA
+----------------------------------------------------------------------
+local old_subtract_stamina = PlayerMovement.subtract_stamina
+function PlayerMovement:subtract_stamina(...)
+    if settings.master_switch and settings.invulnerable then
+        return
+    end
+    return old_subtract_stamina(self, ...)
+end
+
+local old_is_stamina_drained = PlayerMovement.is_stamina_drained
+function PlayerMovement:is_stamina_drained(...)
+    if settings.master_switch and settings.invulnerable then
+        return false
+    end
+    return old_is_stamina_drained(self, ...)
+end
